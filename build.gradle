@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.exmaple'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('org.junit.jupiter:junit-jupiter:5.5.2')
+    compile "com.sparkjava:spark-core:2.8.0"
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+}
+
+test {
+    useJUnitPlatform()
+}
