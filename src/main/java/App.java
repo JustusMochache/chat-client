@@ -19,7 +19,6 @@ public class App {
         webSocket("/chat", ChatWebSocketHandler.class);
         init();
     }
-    //Sends a message from one user to all users, along with a list of current usernames
     public static void broadcastMessage(String sender, String message) {
         userUsernameMap.keySet().stream().filter(Session::isOpen).forEach(session -> {
             try {
@@ -33,7 +32,6 @@ public class App {
         });
     }
 
-    //Builds a HTML element with a sender-name, a message, and a timestamp,
     private static String createHtmlMessageFromSender(String sender, String message) {
         return article(
                 b(sender + " says:"),
