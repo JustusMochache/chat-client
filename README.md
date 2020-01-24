@@ -8,6 +8,7 @@ Full featured chat for gaming community. Keep players engaged and retained using
 ## Technologies Used :computer:
 - Java Spark
 - WebSocket
+- Javascript
 
 ## Contact
 For issues, bugs or queries, contact me on:
