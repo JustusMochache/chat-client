@@ -47,7 +47,7 @@ li {
 
 #chat p {
     margin: 5px 0;
-    font-weight: 300
+    font-weight: 300;
 }
 
 #chat .timestamp {
@@ -61,13 +61,14 @@ li {
     background: #f1f1f1;
     padding: 10px;
     margin: 10px 0;
+    border-radius: 5px;
     border-left: 5px solid #aaa;
     position: relative;
     word-wrap: break-word;
 }
 
 #chat article:first-of-type {
-    background: #c9edc3;
+    background: palevioletred;
     border-left-color: #74a377;
     animation: enter .2s 1;
 }

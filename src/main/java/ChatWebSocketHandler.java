@@ -10,7 +10,7 @@ public class ChatWebSocketHandler {
     public void onConnect(Session user) throws Exception {
         String username = "User " + App.nextUserNumber++;
         App.userUsernameMap.put(user, username);
-        App.broadcastMessage(sender = "Server", msg = (username + " joined the chat"));
+        App.broadcastMessage(sender = "Chatta", msg = (username + " joined the chat"));
     }
 
     @OnWebSocketClose
