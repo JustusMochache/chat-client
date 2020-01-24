@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-group 'com.watitwa'
+group 'com.example'
 version '1.0-SNAPSHOT'
 applicationName = 'chatta-app'
 mainClassName = 'App'
