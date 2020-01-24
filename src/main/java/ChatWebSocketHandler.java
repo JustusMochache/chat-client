@@ -8,7 +8,7 @@ public class ChatWebSocketHandler {
 
     @OnWebSocketConnect
     public void onConnect(Session user) throws Exception {
-        String username = "User" + App.nextUserNumber++;
+        String username = "User " + App.nextUserNumber++;
         App.userUsernameMap.put(user, username);
         App.broadcastMessage(sender = "Server", msg = (username + " joined the chat"));
     }
